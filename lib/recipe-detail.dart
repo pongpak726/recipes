@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipes/Model/recipe.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecipeDetail extends StatelessWidget{
  Recipe recipe;
@@ -24,9 +25,16 @@ class RecipeDetail extends StatelessWidget{
             fontSize: 24.0,
             fontWeight: FontWeight.bold
           ),
-        )
+        ),
+        Text(
+          recipe.imageText,
+          style: GoogleFonts.roboto(
+            fontSize: 20.0,
+            fontWeight:FontWeight.bold
+          ),
+        ),
         ]
-         )
+         ),
       ),
     );
   }
